@@ -1,0 +1,12 @@
+<h1 class="text-center mb-3">{{title}}</h1>
+<p class="text-center mb-3">Welcome to the {{title}}</p>
+<div class="text-center mb-3">
+    <a href="/new">Add a new message!</a>
+</div>
+<h4>Messages</h4>
+<ul class="list-group">
+    {{#each messages}}
+        <li class="list-group-item">{{this.user}} : {{this.text}}</li>
+        <li class="list-group-item">Submitted on : {{this.added}}</li>
+    {{/each}}
+</ul>
